@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Court hall on the Srikakulam plots — lease plan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#eef1f2; --surface:#ffffff; --surface-2:#e4e9ea; --line:#c3cccd; --ink:#16201f; --muted:#56635f;
+  --a:#a9761b; --a-soft:#f3e6c9; --c:#1f7f73; --c-soft:#d3ece8; --warn:#a4452a; --warn-soft:#f5ddd4;
+  --plan-bg:#f7f9f9; --plan-line:#2b3836; --hatch:#b9c4c2; --court:#dfeee9; --road:#d9dedd;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#121819; --surface:#1a2223; --surface-2:#222c2d; --line:#334142; --ink:#e4e9e6; --muted:#9aa8a4;
+    --a:#e2b04f; --a-soft:#3a3020; --c:#5cc3b4; --c-soft:#183533; --warn:#e58c6c; --warn-soft:#3a241d;
+    --plan-bg:#162021; --plan-line:#c9d4d1; --hatch:#3c4b4c; --court:#1d3532; --road:#263132;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#121819; --surface:#1a2223; --surface-2:#222c2d; --line:#334142; --ink:#e4e9e6; --muted:#9aa8a4;
+  --a:#e2b04f; --a-soft:#3a3020; --c:#5cc3b4; --c-soft:#183533; --warn:#e58c6c; --warn-soft:#3a241d;
+  --plan-bg:#162021; --plan-line:#c9d4d1; --hatch:#3c4b4c; --court:#1d3532; --road:#263132;
+  color-scheme: dark;
+}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Archivo",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:16.5px;line-height:1.6;font-variant-numeric:tabular-nums}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--surface)}
+a{color:var(--c)}
+:focus-visible{outline:2px solid var(--a);outline-offset:2px}
+
+.shell{display:grid;grid-template-columns:230px minmax(0,1fr);max-width:1240px;margin:0 auto}
+nav.toc{position:sticky;top:env(safe-area-inset-top,0px);align-self:start;height:100vh;overflow-y:auto;padding:32px 20px;border-right:1px solid var(--line)}
+nav.toc .brand{font-stretch:115%;font-weight:750;font-size:15px;line-height:1.25;margin-bottom:24px}
+nav.toc .brand span{display:block;font-weight:450;font-stretch:100%;color:var(--muted);font-size:13px;margin-top:4px}
+nav.toc ol{list-style:none;margin:0;padding:0}
+nav.toc li a{display:block;padding:6px 10px;margin:0 -10px;border-radius:6px;color:var(--muted);text-decoration:none;font-size:14.5px}
+nav.toc li a:hover{color:var(--ink);background:var(--surface-2)}
+nav.toc li a.on{color:var(--ink);background:var(--surface-2);font-weight:600}
+.theme-btn{margin-top:24px;font:inherit;font-size:13px;color:var(--muted);background:none;border:1px solid var(--line);border-radius:6px;padding:6px 10px;cursor:pointer}
+
+main{padding:40px 48px 80px;min-width:0}
+section{padding:28px 0 36px;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:0}
+h1{font-stretch:118%;font-weight:780;font-size:clamp(30px,4.4vw,50px);line-height:1.04;letter-spacing:-0.01em;margin:0 0 14px;max-width:16ch}
+h2{font-stretch:112%;font-weight:720;font-size:27px;line-height:1.15;margin:0 0 14px}
+h3{font-weight:650;font-size:18.5px;margin:28px 0 8px}
+p,li{max-width:72ch}
+.lede{font-size:18.5px;color:var(--muted);max-width:62ch;margin:0 0 8px}
+.note{font-size:14px;color:var(--muted)}
+
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:36px;align-items:start}
+.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden;margin:22px 0}
+.facts div{background:var(--surface);padding:12px 14px}
+.facts b{display:block;font-stretch:110%;font-size:21px;font-weight:700}
+.facts span{font-size:13.5px;color:var(--muted)}
+.verdict{border-left:4px solid var(--c);background:var(--surface);padding:16px 20px;border-radius:0 10px 10px 0;margin:20px 0}
+.verdict p{margin:8px 0}
+.pill{display:inline-block;font-size:13px;font-weight:650;padding:1px 9px;border-radius:999px;vertical-align:1px}
+.pill.a{background:var(--a-soft);color:var(--a)}
+.pill.c{background:var(--c-soft);color:var(--c)}
+
+.tbl{overflow-x:auto;margin:14px 0;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+th{font-weight:650;background:var(--surface-2);white-space:nowrap}
+td.n,th.n{text-align:right;white-space:nowrap}
+tr.total td{font-weight:700}
+td.a{color:var(--a);font-weight:600}
+td.c{color:var(--c);font-weight:600}
+td.win-c{background:var(--c-soft);color:var(--c);font-weight:600;text-align:right}
+td.win-a{background:var(--a-soft);color:var(--a);font-weight:600;text-align:right}
+td.even{text-align:right;color:var(--muted)}
+
+.plan-wrap{background:var(--plan-bg);border:1px solid var(--line);border-radius:12px;padding:10px;overflow-x:auto}
+.plan-wrap svg{display:block;width:100%;height:auto;min-width:420px}
+svg text{font-family:"Archivo",system-ui,sans-serif;fill:var(--plan-line)}
+.p-line{stroke:var(--plan-line);fill:none}
+.p-site{stroke:var(--plan-line);stroke-width:2.2;fill:none}
+.p-plotdiv{stroke:var(--plan-line);stroke-width:1;stroke-dasharray:6 5;fill:none;opacity:.7}
+.p-road{fill:var(--road)}
+.p-hatch{fill:url(#hatch)}
+.p-hatchline{stroke:var(--hatch);stroke-width:1.2}
+.p-bldg{fill:var(--surface);stroke:var(--plan-line);stroke-width:2}
+.p-room{fill:var(--surface-2);stroke:var(--plan-line);stroke-width:1}
+.p-court{fill:var(--court);stroke:var(--c);stroke-width:1.6}
+.p-cline{stroke:var(--c);stroke-width:1;fill:none}
+.p-pk{stroke:var(--a);stroke-width:1.2;stroke-dasharray:4 3;fill:none}
+.p-dim{stroke:var(--muted);stroke-width:1;fill:none}
+.p-dimtext{fill:var(--muted);font-size:11px}
+.p-bike{fill:none;stroke:var(--a);stroke-width:1.2}
+.p-arrow{fill:var(--a)}
+.t-s{font-size:11px}.t-m{font-size:13px;font-weight:600}.t-l{font-size:15px;font-weight:700}
+.legend{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:13.5px;color:var(--muted);margin:10px 4px 0}
+.legend i{display:inline-block;width:16px;height:11px;border-radius:2px;margin-right:6px;vertical-align:-1px;border:1px solid var(--line)}
+
+.cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:16px 0}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+.card.a{border-top:4px solid var(--a)}
+.card.c{border-top:4px solid var(--c)}
+.card h3{margin-top:0}
+.card ul{padding-left:18px;margin:6px 0}
+.card li{margin:4px 0}
+.callout{background:var(--warn-soft);border-radius:10px;padding:12px 16px;margin:16px 0}
+.callout b{color:var(--warn)}
+.idea{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:16px 0}
+.idea p{margin:6px 0}
+
+/* calculator */
+.calc{display:grid;grid-template-columns:minmax(0,330px) minmax(0,1fr);gap:22px;margin-top:16px}
+.inputs{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;align-self:start}
+.big{display:grid;gap:12px;margin-bottom:10px}
+.big label{display:block;font-weight:650;font-size:15px;margin-bottom:4px}
+.big label small{display:block;font-weight:400;color:var(--muted);font-size:13px}
+.big input{width:100%;font:inherit;font-size:22px;font-stretch:108%;font-weight:700;padding:8px 10px;border:2px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+.big .a input{border-color:var(--a)}
+.big .c input{border-color:var(--c)}
+.field{display:grid;grid-template-columns:1fr 118px;gap:8px;align-items:center;margin:8px 0}
+.field label{font-size:14px;color:var(--muted)}
+.field input,.field select{width:100%;font:inherit;font-size:15px;padding:6px 8px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink);text-align:right}
+.field select{text-align:left}
+.fs{font-weight:650;font-size:14px;margin:14px 0 2px}
+.outs{min-width:0}
+.answer{border-radius:12px;padding:16px 20px;border:2px solid var(--line);background:var(--surface)}
+.answer.c{border-color:var(--c);background:var(--c-soft)}
+.answer.a{border-color:var(--a);background:var(--a-soft)}
+.answer.w{border-color:var(--warn);background:var(--warn-soft)}
+.answer h3{margin:0 0 6px;font-stretch:110%;font-size:22px}
+.answer.c h3{color:var(--c)}.answer.a h3{color:var(--a)}.answer.w h3{color:var(--warn)}
+.answer p{margin:6px 0}
+.answer ul{margin:6px 0;padding-left:18px}
+.gauge{margin:16px 0 6px}
+.gauge .bar{position:relative;height:30px;border-radius:6px;overflow:hidden;display:flex;border:1px solid var(--line)}
+.gauge .bar div{height:100%}
+.gauge .za{background:var(--a-soft)}.gauge .zc{background:var(--c-soft)}.gauge .zw{background:var(--warn-soft)}
+.gauge .mk{position:absolute;top:-4px;width:4px;height:38px;background:var(--ink);border-radius:2px;transform:translateX(-2px)}
+.gauge .ticks{position:relative;height:34px;font-size:12.5px;color:var(--muted)}
+.gauge .ticks span{position:absolute;transform:translateX(-50%);white-space:nowrap;top:4px}
+.gauge .keys{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;color:var(--muted)}
+.gauge .keys i{display:inline-block;width:14px;height:10px;border-radius:2px;margin-right:5px;border:1px solid var(--line)}
+.kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:12px}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.kpi span{display:block;font-size:13px;color:var(--muted)}
+.kpi b{font-stretch:108%;font-size:19px}
+.kpi.a b{color:var(--a)}.kpi.c b{color:var(--c)}
+.checks{margin-top:12px}
+.checks li{margin:6px 0}
+.ok{color:var(--c);font-weight:700}.bad{color:var(--warn);font-weight:700}
+.chart{background:var(--surface);border:1px solid var(--line);border-radius:10px;margin-top:12px;padding:8px}
+.chart svg{display:block;width:100%;height:auto}
+.chart text{font-family:"Archivo",system-ui,sans-serif;font-size:11px;fill:var(--muted)}
+.ch-grid{stroke:var(--line);stroke-width:1}
+.ch-a{stroke:var(--a);stroke-width:2.6;fill:none}
+.ch-c{stroke:var(--c);stroke-width:2.6;fill:none}
+.ch-zero{stroke:var(--muted);stroke-width:1;stroke-dasharray:3 3}
+details{margin-top:12px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:8px 14px}
+summary{cursor:pointer;font-weight:600;font-size:15px}
+ol.steps{padding-left:22px}
+ol.steps li{margin:8px 0}
+dl.gloss{display:grid;grid-template-columns:minmax(0,190px) minmax(0,1fr);gap:8px 20px;margin:14px 0}
+dl.gloss dt{font-weight:650}
+dl.gloss dd{margin:0;color:var(--ink);max-width:62ch}
+
+.mobnav{display:none}
+@media (max-width:900px){
+  .shell{grid-template-columns:1fr}
+  nav.toc{display:none}
+  .mobnav{display:flex;gap:4px;overflow-x:auto;position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--surface);border-bottom:1px solid var(--line);padding:8px 12px}
+  .mobnav a{flex:none;font-size:14px;color:var(--muted);text-decoration:none;padding:6px 10px;border-radius:6px}
+  .mobnav a.on{background:var(--surface-2);color:var(--ink);font-weight:600}
+  main{padding:20px 18px 60px}
+  .hero,.cols,.calc{grid-template-columns:1fr}
+  .kpis{grid-template-columns:repeat(2,minmax(0,1fr))}
+  dl.gloss{grid-template-columns:1fr;gap:2px 0}
+  dl.gloss dd{margin-bottom:10px}
+}
+</style>
+</head>
+<body>
+<div class="mobnav" id="mobnav"></div>
+<div class="shell">
+<nav class="toc" aria-label="Sections">
+  <div class="brand">Srikakulam court hall<span>Lease plan, Nov 2026</span></div>
+  <ol id="toc">
+    <li><a href="#summary">The decision in brief</a></li>
+    <li><a href="#site">Our land</a></li>
+    <li><a href="#build">What can be built</a></li>
+    <li><a href="#options">The two options</a></li>
+    <li><a href="#rent">How rent decides it</a></li>
+    <li><a href="#pricing">Our asking rent</a></li>
+    <li><a href="#loan">Clearing the loan early</a></li>
+    <li><a href="#calculator">Calculator</a></li>
+    <li><a href="#tax">Tax, simply</a></li>
+    <li><a href="#legal">Legal and approvals</a></li>
+    <li><a href="#next">Next steps</a></li>
+    <li><a href="#words">Words used here</a></li>
+    <li><a href="#assumptions">Assumptions</a></li>
+  </ol>
+  <button class="theme-btn" id="themeBtn" type="button">Switch theme</button>
+</nav>
+
+<main>
+<section id="summary">
+  <div class="hero">
+    <div>
+      <h1>Three plots, one court hall</h1>
+      <p class="lede">Someone wants to rent our three joined plots and run a badminton and pickleball hall. This page explains the two ways we can do it, what can be built, and how to decide.</p>
+      <div class="facts">
+        <div><b>9,920 sq ft</b><span>All three plots together, 124 × 80 ft</span></div>
+        <div><b>~6,490 sq ft</b><span>Floor we build and rent out</span></div>
+        <div><b>₹15.5–16</b><span>Option C rent per sq ft of floor</span></div>
+        <div><b>3 courts</b><span>Badminton, also marked for pickleball</span></div>
+      </div>
+    </div>
+    <div class="verdict">
+      <p><strong>The decision in brief</strong></p>
+      <p><span class="pill a">Option A</span> We rent out only the empty land. The tenant builds everything. We spend nothing and take no loan. Expected rent: ₹3–4 per sq ft of land, about ₹30–40k a month.</p>
+      <p><span class="pill c">Option C</span> We build the hall’s basic structure for about ₹50–55 lakh, mostly with a bank loan, and rent out land plus building. The tenant adds the courts and fittings. Rent: ₹15.5–16 per sq ft of floor, about ₹1.0–1.04 lakh a month. If we put the full rent towards the loan, it’s cleared in about 5 years.</p>
+      <p><strong>The rule of thumb:</strong> Option C is worth it only if the tenant pays <strong>at least about ₹45,000 a month more</strong> for the building than he would for the empty land. If he won’t pay that much extra, Option A is better.</p>
+      <p class="note">These are estimates for planning. Check them with a licensed building planner, a chartered accountant, your bank and a lawyer before signing.</p>
+    </div>
+  </div>
+</section>
+
+<section id="site">
+  <h2>Our land</h2>
+  <p>Three plots sit side by side, north to south, all facing the 40 ft road on the east. A 50 ft road runs along the back (west) of the middle and south plots. The south plot also has a road on its south side. Land here is worth about ₹15–16 lakh per cent, so the whole block is worth roughly ₹3.4–3.6 crore.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Plot</th><th class="n">Size</th><th class="n">Area</th><th>Roads touching it</th><th class="n">Share of rent</th></tr></thead>
+    <tbody>
+      <tr><td>North (father)</td><td class="n">40 × 80 ft</td><td class="n">3,200 sq ft</td><td>East only</td><td class="n">32.3%</td></tr>
+      <tr><td>Middle (Harsha)</td><td class="n">40 × 80 ft</td><td class="n">3,200 sq ft</td><td>East and west</td><td class="n">32.3%</td></tr>
+      <tr><td>South</td><td class="n">44 × 80 ft</td><td class="n">3,520 sq ft</td><td>East, west and south</td><td class="n">35.4%</td></tr>
+      <tr class="total"><td>Together</td><td class="n">124 × 80 ft</td><td class="n">9,920 sq ft</td><td>About 22.8 cents</td><td class="n">100%</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">The rent share here is simply by land area. The families can agree a different split, but write it down early.</p>
+</section>
+
+<section id="build">
+  <h2>What can be built</h2>
+  <p>Building rules say we must leave some land open along each edge. These open strips are called <strong>setbacks</strong>. In Andhra Pradesh there’s no separate limit on how much of the plot a building can cover, so the setbacks decide the building’s size. A licensed building planner (an <strong>LTP</strong>) will confirm the exact widths. For now we assume 3 m (about 10 ft) on the three road sides and 2 m (about 6.5 ft) on the north side.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>If the open strips are…</th><th class="n">Building size</th><th class="n">Floor area</th><th>Courts that fit</th></tr></thead>
+    <tbody>
+      <tr><td>3 m on every side</td><td class="n">104 × 60 ft</td><td class="n">6,290 sq ft</td><td>3, a little tight</td></tr>
+      <tr><td><strong>3 m on road sides, 2 m on the north</strong> (our plan)</td><td class="n">108 × 60 ft</td><td class="n">6,490 sq ft</td><td>3, comfortably</td></tr>
+      <tr><td>4 m in front, 3 m elsewhere</td><td class="n">104 × 57 ft</td><td class="n">5,950 sq ft</td><td>3, but only just</td></tr>
+    </tbody>
+  </table></div>
+  <div class="callout"><b>The one thing to check first:</b> a badminton court is 44 ft long and players need about 6.5 ft of space behind each end, so the building must be at least 57 ft deep. Our land is 80 ft deep. If the open strips at the front and back add up to more than 23 ft, the courts won’t fit. Ask the LTP about this before anything else.</div>
+
+  <h3>Ground floor plan</h3>
+  
+  <div class="plan-wrap">
+  <svg viewBox="0 0 640 790" role="img" aria-label="Site plan showing the 124 by 80 foot site, setbacks, an amenity strip at the north end and three east–west courts">
+    <defs>
+      <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+        <line x1="0" y1="0" x2="0" y2="8" class="p-hatchline"/>
+      </pattern>
+    </defs>
+    <!-- roads -->
+    <rect class="p-road" x="520" y="0" width="90" height="790"/>
+    <rect class="p-road" x="30" y="260" width="90" height="530"/>
+    <rect class="p-road" x="30" y="680" width="580" height="110"/>
+    <text class="t-m" x="565" y="40" text-anchor="middle" transform="rotate(90 565 40)">40 ft road</text>
+    <text class="t-m" x="75" y="420" text-anchor="middle" transform="rotate(-90 75 420)">50 ft road</text>
+    <text class="t-m" x="300" y="745" text-anchor="middle">Road (south)</text>
+    <text class="t-s" x="75" y="150" text-anchor="middle" transform="rotate(-90 75 150)">Neighbouring land</text>
+    <text class="t-s" x="320" y="38" text-anchor="middle">Neighbouring plot</text>
+    <!-- setback hatch: whole site, building drawn over -->
+    <rect class="p-hatch" x="120" y="60" width="400" height="620"/>
+    <rect class="p-site" x="120" y="60" width="400" height="620"/>
+    <!-- plot dividers -->
+    <line class="p-plotdiv" x1="120" y1="260" x2="520" y2="260"/>
+    <line class="p-plotdiv" x1="120" y1="460" x2="520" y2="460"/>
+    <!-- building -->
+    <rect class="p-bldg" x="169.2" y="92.8" width="301.6" height="538"/>
+    <!-- amenity strip rooms, west to east: Gents 12, Ladies 12, Store 6, Elec 3, Stair 5.5, Café 8.5, Reception 13.3 ft -->
+    <rect class="p-room" x="169.2" y="92.8" width="60" height="100"/>
+    <rect class="p-room" x="229.2" y="92.8" width="60" height="100"/>
+    <rect class="p-room" x="289.2" y="92.8" width="30" height="100"/>
+    <rect class="p-room" x="319.2" y="92.8" width="15" height="100"/>
+    <rect class="p-room" x="334.2" y="92.8" width="27.5" height="100"/>
+    <rect class="p-room" x="361.7" y="92.8" width="42.5" height="100"/>
+    <rect class="p-room" x="404.2" y="92.8" width="66.6" height="100"/>
+    <g class="p-line">
+      <line x1="336" y1="105" x2="360" y2="105"/><line x1="336" y1="117" x2="360" y2="117"/><line x1="336" y1="129" x2="360" y2="129"/><line x1="336" y1="141" x2="360" y2="141"/><line x1="336" y1="153" x2="360" y2="153"/><line x1="336" y1="165" x2="360" y2="165"/><line x1="336" y1="177" x2="360" y2="177"/>
+    </g>
+    <text class="t-s" x="199.2" y="140" text-anchor="middle">Gents WC</text><text class="t-s" x="199.2" y="154" text-anchor="middle">+ changing</text>
+    <text class="t-s" x="259.2" y="140" text-anchor="middle">Ladies WC</text><text class="t-s" x="259.2" y="154" text-anchor="middle">+ changing</text>
+    <text class="t-s" x="304.2" y="146" text-anchor="middle">Store</text>
+    <text class="t-s" x="326.7" y="146" text-anchor="middle">E</text>
+    <text class="t-s" x="382.9" y="140" text-anchor="middle">Café /</text><text class="t-s" x="382.9" y="154" text-anchor="middle">pro shop</text>
+    <text class="t-s" x="437.5" y="146" text-anchor="middle">Reception</text>
+    <!-- entrance gap and arrow -->
+    <line x1="470.8" y1="120" x2="470.8" y2="160" style="stroke:var(--plan-bg);stroke-width:4"/>
+    <polygon class="p-arrow" points="512,140 494,131 494,149"/>
+    <line x1="494" y1="140" x2="476" y2="140" style="stroke:var(--a);stroke-width:2"/>
+    <text class="t-s" x="497" y="122" text-anchor="middle">Entry</text>
+    <!-- courts: x 209.2 w 220; y 225.3, 360.3, 495.3; h 100 -->
+    <g id="courts"></g>
+    <text class="t-m" x="319.2" y="220" text-anchor="middle">Court 1</text>
+    <text class="t-m" x="319.2" y="355" text-anchor="middle">Court 2</text>
+    <text class="t-m" x="319.2" y="490" text-anchor="middle">Court 3</text>
+    <!-- two-wheeler parking in east setback -->
+    <g id="bikes"></g>
+    <text class="t-s" x="495" y="415" text-anchor="middle" transform="rotate(90 495 415)">Two-wheeler parking</text>
+    <!-- dimensions -->
+    <line class="p-dim" x1="120" y1="50" x2="520" y2="50"/>
+    <line class="p-dim" x1="120" y1="45" x2="120" y2="55"/><line class="p-dim" x1="520" y1="45" x2="520" y2="55"/>
+    <text class="p-dimtext" x="420" y="46" text-anchor="middle">80 ft</text>
+    <line class="p-dim" x1="15" y1="60" x2="15" y2="680"/>
+    <line class="p-dim" x1="10" y1="60" x2="20" y2="60"/><line class="p-dim" x1="10" y1="680" x2="20" y2="680"/>
+    <text class="p-dimtext" x="15" y="370" text-anchor="middle" transform="rotate(-90 15 370)" style="paint-order:stroke;stroke:var(--plan-bg);stroke-width:4px">124 ft</text>
+    <text class="p-dimtext" x="320" y="650" text-anchor="middle">Building 60.3 ft (E–W) × 107.6 ft (N–S)</text>
+    <text class="p-dimtext" x="144.6" y="400" text-anchor="middle" transform="rotate(-90 144.6 400)">3 m setback</text>
+    <text class="p-dimtext" x="320" y="672" text-anchor="middle">3 m setback</text>
+    <text class="p-dimtext" x="320" y="82" text-anchor="middle">2 m</text>
+    <text class="p-dimtext" x="140" y="250" text-anchor="start">North plot</text>
+    <text class="p-dimtext" x="140" y="454" text-anchor="start">Middle plot</text>
+    <text class="p-dimtext" x="140" y="476" text-anchor="start">South plot</text>
+    <!-- north arrow -->
+    <g transform="translate(600 30)"><polygon points="0,-16 7,8 0,3 -7,8" style="fill:var(--plan-line)"/><text class="t-m" x="0" y="24" text-anchor="middle">N</text></g>
+  </svg>
+  <div class="legend">
+    <span><i style="background:var(--court);border-color:var(--c)"></i>Badminton court, 20 × 44 ft</span>
+    <span><i style="border:1.5px dashed var(--a);background:none"></i>Pickleball non-volley line (same court size)</span>
+    <span><i style="background:repeating-linear-gradient(45deg,var(--hatch) 0 2px,transparent 2px 6px)"></i>Setback (open)</span>
+    <span><i style="background:var(--road)"></i>Road</span>
+  </div>
+  </div>
+
+  
+
+  <h3>What goes where</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Space</th><th class="n">Area (sq ft)</th><th>What it’s for</th></tr></thead>
+    <tbody>
+      <tr><td>Court hall</td><td class="n">5,280</td><td>Three courts with space around them to play safely.</td></tr>
+      <tr><td>Reception</td><td class="n">266</td><td>Front desk at the entrance on the 40 ft road.</td></tr>
+      <tr><td>Gents toilets and changing</td><td class="n">240</td><td>Toilets, showers, lockers.</td></tr>
+      <tr><td>Ladies toilets and changing</td><td class="n">240</td><td>Toilets, showers, lockers.</td></tr>
+      <tr><td>Café or sports shop</td><td class="n">170</td><td>Drinks, shuttles, rackets: extra income for the tenant.</td></tr>
+      <tr><td>Store room</td><td class="n">120</td><td>Nets, posts, cleaning equipment.</td></tr>
+      <tr><td>Staircase</td><td class="n">110</td><td>Up to the upper level.</td></tr>
+      <tr><td>Electrical room</td><td class="n">60</td><td>Meter and power panel.</td></tr>
+      <tr class="total"><td>Ground floor total</td><td class="n">6,490</td><td>About two-thirds of the land. This is the area we build and rent out.</td></tr>
+      <tr><td>Upper level (optional, later)</td><td class="n">1,100</td><td>Not part of our building or the rent. The tenant can add it at his cost, or for extra rent.</td></tr>
+      
+      <tr><td>Open land around the building</td><td class="n">3,430</td><td>Entrance area, parking for about 30 two-wheelers, water tank, borewell.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Optional upper level (mezzanine)</h3>
+  
+  <div class="plan-wrap">
+  <svg viewBox="0 0 640 150" role="img" aria-label="Mezzanine plan over the amenity strip: fitness studio, viewing gallery, coach room and stair">
+    <rect class="p-bldg" x="20" y="20" width="600" height="100"/>
+    <rect class="p-room" x="20" y="20" width="219" height="100"/>
+    <rect class="p-room" x="239" y="20" width="109" height="100"/>
+    <rect class="p-room" x="348" y="20" width="55" height="100"/>
+    <rect class="p-room" x="403" y="20" width="217" height="100" style="fill:var(--court)"/>
+    <text class="t-m" x="129.5" y="66" text-anchor="middle">Fitness / yoga studio</text><text class="t-s" x="129.5" y="84" text-anchor="middle">~440 sq ft</text>
+    <text class="t-s" x="293.5" y="66" text-anchor="middle">Coach / physio</text><text class="t-s" x="293.5" y="80" text-anchor="middle">~220 sq ft</text>
+    <text class="t-s" x="375.5" y="72" text-anchor="middle">Stair</text>
+    <text class="t-m" x="511.5" y="66" text-anchor="middle">Viewing gallery</text><text class="t-s" x="511.5" y="84" text-anchor="middle">~440 sq ft</text>
+    <line x1="20" y1="128" x2="620" y2="128" style="stroke:var(--c);stroke-width:2;stroke-dasharray:6 4"/>
+    <text class="p-dimtext" x="320" y="144" text-anchor="middle">Glass or mesh railing on the court side</text>
+  </svg>
+  </div>
+  
+  <p class="note">Not included in our ₹50–55 lakh building or in the rent. The hall’s roof is high enough to add it later over the toilets and reception, for about ₹6–9 lakh. If the tenant wants it, he can build it at his own cost, or we build it and charge about ₹7–8 per sq ft extra. Keep the staircase space in the ground-floor layout so the option stays open.</p>
+
+  <h3>Why three courts and not four</h3>
+  <p>Four courts would squeeze in only with very little space between them and no room left for toilets, reception or stairs. Three courts with proper spacing, plus the facilities, is the better use of the land.</p>
+
+  <h3>What makes a good badminton hall</h3>
+  <ul>
+    <li><strong>A high roof:</strong> at least 26 ft clear inside, ideally 30 ft, so high shots don’t hit the roof.</li>
+    <li><strong>No skylights over the courts:</strong> sunlight in players’ eyes ruins the game.</li>
+    <li><strong>No ceiling fans:</strong> moving air pushes the shuttle around. Use wall exhaust fans.</li>
+    <li><strong>Dark walls behind the courts,</strong> and lights placed along the sides rather than straight above.</li>
+    <li><strong>Pickleball too:</strong> a pickleball court is the same size, so the same courts can carry both sets of lines.</li>
+  </ul>
+</section>
+
+<section id="options">
+  <h2>The two options</h2>
+  <div class="cols">
+    <div class="card a">
+      <h3>Option A: rent out only the land</h3>
+      <p>We lease the empty plots. The tenant pays for and builds everything, and runs the hall.</p>
+      <ul>
+        <li><strong>Our money in:</strong> nothing. No loan.</li>
+        <li><strong>Rent:</strong> ₹3–4 per sq ft of land, about ₹30–40k a month, rising 5% a year.</li>
+        <li><strong>Lease length:</strong> 12–15 years, so the tenant can earn back what he spent on the building.</li>
+        <li><strong>If he leaves:</strong> we get the land back and owe nothing to anyone.</li>
+        <li><strong>At the end:</strong> the lease should say the building becomes ours free of cost, or he removes it and clears the land. We pick one.</li>
+      </ul>
+      <p class="note">Best when: we want zero risk, or the tenant won’t pay much extra for a ready building.</p>
+    </div>
+    <div class="card c">
+      <h3>Option C: we build the shell, he fits it out</h3>
+      <p>We build the basic structure (foundation, steel frame, roof, walls, toilets, power, water). The tenant adds the court flooring, lights, nets and furniture, and runs the hall.</p>
+      <ul>
+        <li><strong>Building cost:</strong> ₹50–55 lakh, for the 6,490 sq ft ground floor.</li>
+        <li><strong>Our money in:</strong> about ₹10–11 lakh from the three families. A bank lends the rest, ₹40–44 lakh.</li>
+        <li><strong>Loan:</strong> a normal 10-year loan (₹53–58k a month), paid off early with the full rent in about 5 years.</li>
+        <li><strong>Rent:</strong> ₹16 per sq ft to start, ₹15.5 to close, about ₹1.0–1.04 lakh a month, rising 5% a year.</li>
+        <li><strong>If he leaves:</strong> we still have to pay the loan until a new tenant comes. A large deposit protects us.</li>
+        <li><strong>After the loan:</strong> once it’s cleared (about 5 years), the building is ours and the full rent comes to the families.</li>
+      </ul>
+      <p class="note">Best when: the tenant has money for the fittings but not the building, and will pay well for a ready hall.</p>
+    </div>
+  </div>
+  <div class="tbl"><table>
+    <thead><tr><th>Who pays for what in Option C</th><th>Us (about ₹50–55 lakh)</th><th>Tenant (about ₹20–30 lakh)</th></tr></thead>
+    <tbody>
+      <tr><td>Structure</td><td>Foundation, floor slab, steel frame, roof, side walls</td><td>Court flooring mats</td></tr>
+      <tr><td>Facilities</td><td>Toilets, changing rooms, reception, store, staircase</td><td>Café, gym and viewing-area furniture</td></tr>
+      <tr><td>Services</td><td>Power connection and main wiring, borewell, water tank, drainage, boundary wall</td><td>Sports lights, nets, posts, court markings</td></tr>
+      <tr><td>Running the business</td><td>—</td><td>Staff, booking system, trade licence, signboards</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="rent">
+  <h2>How rent decides it</h2>
+  <div class="idea">
+    <p><strong>The key idea.</strong> In Option C we spend ₹55 lakh, take on a loan, and accept the risk of paying it if the tenant leaves. In return the tenant pays more rent than he would for empty land. The question is whether that <em>extra</em> rent is enough.</p>
+    <p>We call that extra the <strong>building premium</strong>: Option C rent minus Option A rent. Everything comes down to this one number.</p>
+  </div>
+
+  <h3>Is ₹60k realistic for empty land?</h3>
+  <p>Probably not. ₹60k is about ₹6 per sq ft a month, closer to what bigger cities ask. In Srikakulam, with the tenant also spending ₹80 lakh–1 crore to build, ₹2.5–4 per sq ft is more likely, which is <strong>₹25–40k a month</strong>. Local brokers can confirm this.</p>
+
+  <h3>How much extra Option C needs</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>If we plan to keep this arrangement for…</th><th class="n">Building premium needed</th></tr></thead>
+    <tbody>
+      <tr><td>10 years</td><td class="n">about ₹70,000 a month</td></tr>
+      <tr><td><strong>15 years</strong></td><td class="n"><strong>about ₹45,000 a month</strong></td></tr>
+      <tr><td>15 years, counting what the steel building is worth at the end</td><td class="n">about ₹32,000 a month</td></tr>
+      <tr><td>20 years</td><td class="n">about ₹32,000 a month</td></tr>
+    </tbody>
+  </table></div>
+  <p>The longer we hold, the smaller the premium needs to be, because after the loan is paid off Option C earns full rent. Interest rates and a year without a tenant barely change these numbers (by ₹1–4k).</p>
+
+  <h3>The full picture</h3>
+  <p>Each box shows how much <strong>more</strong> (or less) money the three families end up with in Option C compared with Option A after 15 years, after loan payments and tax. Green means Option C wins; amber means Option A wins.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Land rent (A) ↓ · Building rent (C) →</th><th class="n">₹80k</th><th class="n">₹90k</th><th class="n">₹1.0 lakh</th><th class="n">₹1.1 lakh</th><th class="n">₹1.2 lakh</th></tr></thead>
+    <tbody>
+      <tr><td>₹25k</td><td class="win-c">+₹22 L</td><td class="win-c">+₹41 L</td><td class="win-c">+₹58 L</td><td class="win-c">+₹76 L</td><td class="win-c">+₹94 L</td></tr>
+      <tr><td>₹30k</td><td class="win-c">+₹12 L</td><td class="win-c">+₹30 L</td><td class="win-c">+₹48 L</td><td class="win-c">+₹66 L</td><td class="win-c">+₹84 L</td></tr>
+      <tr><td>₹35k</td><td class="even">+₹2 L</td><td class="win-c">+₹20 L</td><td class="win-c">+₹38 L</td><td class="win-c">+₹55 L</td><td class="win-c">+₹73 L</td></tr>
+      <tr><td>₹40k</td><td class="win-a">−₹9 L</td><td class="win-c">+₹9 L</td><td class="win-c">+₹27 L</td><td class="win-c">+₹45 L</td><td class="win-c">+₹63 L</td></tr>
+      <tr><td>₹50k</td><td class="win-a">−₹29 L</td><td class="win-a">−₹11 L</td><td class="win-c">+₹7 L</td><td class="win-c">+₹24 L</td><td class="win-c">+₹42 L</td></tr>
+      <tr><td>₹60k</td><td class="win-a">−₹50 L</td><td class="win-a">−₹32 L</td><td class="win-a">−₹14 L</td><td class="even">+₹4 L</td><td class="win-c">+₹21 L</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">Based on a ₹55 lakh building, 80% bank loan at 10% over 10 years, rent rising 5% a year. These figures exclude what the building itself is worth at the end, which adds about ₹22 lakh in Option C’s favour.</p>
+
+  <h3>What the tenant will accept</h3>
+  <p>Look at it from the tenant’s side. If he built the ₹55 lakh structure himself, his own loan would cost him about <strong>₹76,000 a month</strong>. So he should happily pay us up to about ₹75,000 extra for a ready building, because that’s cheaper for him than building it. That gives a clear range:</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Building premium the tenant agrees to</th><th>What it means</th><th>Choose</th></tr></thead>
+    <tbody>
+      <tr><td>Less than ₹45,000</td><td>Not enough to make our investment and risk worthwhile.</td><td class="a">Option A</td></tr>
+      <tr><td><strong>₹45,000 to ₹75,000</strong></td><td>Good for both sides: we earn more, and he pays less than building it himself.</td><td class="c">Option C</td></tr>
+      <tr><td>More than ₹75,000</td><td>He’d normally build it himself. If he still agrees, he may be short of money, so check his finances carefully.</td><td class="c">Option C, with caution</td></tr>
+    </tbody>
+  </table></div>
+  <p>With land worth ₹30–40k in rent, the sweet spot for Option C is a building rent of about <strong>₹85,000 to ₹1.1 lakh</strong> a month. Our asking price of ₹15.5–16 per sq ft (₹1.0–1.04 lakh) sits inside it.</p>
+
+  <h3>One more limit: what the hall earns</h3>
+  <p>Three courts plus coaching classes might bring the tenant ₹2.5–3.5 lakh a month. If rent takes more than about a third of that, the business gets shaky. A rent of ₹1.2 lakh would take 34–48%, which is too much. A shaky tenant is a bigger problem in Option C, because we still owe the bank.</p>
+
+  <div class="cols">
+    <div class="card c">
+      <h3>Choose Option C when</h3>
+      <ul>
+        <li>The tenant agrees to a building premium of ₹45–75k.</li>
+        <li>He has money for the fittings but not the building.</li>
+        <li>A bank agrees to lend against our plots.</li>
+        <li>All three families can put in their share of ₹11 lakh and agree how to share the loan payments if the hall is empty.</li>
+        <li>He signs for at least 7 years and pays a deposit of 8–10 months’ rent.</li>
+        <li>We plan to keep the land for 15 years or more.</li>
+      </ul>
+    </div>
+    <div class="card a">
+      <h3>Choose Option A when</h3>
+      <ul>
+        <li>The tenant offers less than about ₹45k extra for the building.</li>
+        <li>His track record or finances are weak.</li>
+        <li>Banks won’t lend against empty plots.</li>
+        <li>Any family can’t commit money or share loan payments.</li>
+        <li>Permissions for a sports hall are still unclear.</li>
+        <li>We might want the land back within about 10 years.</li>
+      </ul>
+    </div>
+  </div>
+  <p><strong>Simplest way to find out:</strong> ask the tenant for two prices, one for the empty land and one for the ready building. The difference is the building premium. Enter both in the calculator below.</p>
+</section>
+
+<section id="pricing">
+  <h2>Our asking rent</h2>
+  <p>We rent out only the 6,490 sq ft ground floor; the optional upper level isn’t included. Option A is priced per sq ft of land, because there’s no building. Option C is priced per sq ft of the floor we build.</p>
+  <div class="cols">
+    <div class="card a">
+      <h3>Option A: land only (9,920 sq ft)</h3>
+      <div class="tbl"><table>
+        <thead><tr><th></th><th class="n">Per sq ft</th><th class="n">Per month</th></tr></thead>
+        <tbody>
+          <tr><td>Opening ask</td><td class="n">₹4.0</td><td class="n">₹39,680</td></tr>
+          <tr class="total"><td>Target</td><td class="n">₹3.5</td><td class="n">₹34,720</td></tr>
+          <tr><td>Lowest to accept</td><td class="n">₹3.0</td><td class="n">₹29,760</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+    <div class="card c">
+      <h3>Option C: ground floor (6,490 sq ft)</h3>
+      <div class="tbl"><table>
+        <thead><tr><th></th><th class="n">Per sq ft</th><th class="n">Per month</th></tr></thead>
+        <tbody>
+          <tr><td>Opening ask</td><td class="n">₹16.0</td><td class="n">₹1,03,840</td></tr>
+          <tr class="total"><td>Close</td><td class="n">₹15.5</td><td class="n">₹1,00,595</td></tr>
+          <tr><td>Lowest to accept</td><td class="n">₹13.0</td><td class="n">₹84,370</td></tr>
+        </tbody>
+      </table></div>
+      <p class="note">Below ₹13, the extra over land rent drops under the ~₹45k Option C needs, and clearing the loan takes 6 years or more.</p>
+    </div>
+  </div>
+  <h3>Does ₹15.5 hold up?</h3>
+  <ul>
+    <li><strong>Building premium:</strong> ₹1,00,595 − ₹34,720 = ₹65,875 a month, inside the ₹45–75k window where both sides gain.</li>
+    <li><strong>The tenant’s alternative:</strong> building it himself would cost him about ₹69k a month (₹50 lakh building) to ₹76k (₹55 lakh) in loan payments. Our premium sits near that limit, so expect bargaining. Hold the rate and offer rent-free months instead.</li>
+    <li><strong>The hall’s income:</strong> ₹1 lakh is about 33% of an estimated ₹3 lakh a month. That’s on the edge, so ask for his booking and coaching projections.</li>
+  </ul>
+  <h3>Terms that go with the rent</h3>
+  <div class="tbl"><table>
+    <thead><tr><th></th><th>Option A</th><th>Option C</th></tr></thead>
+    <tbody>
+      <tr><td>Yearly rent increase</td><td>5%</td><td>5% (the loan plan depends on it)</td></tr>
+      <tr><td>Deposit</td><td>6 months’ rent</td><td>8–10 months’ rent</td></tr>
+      <tr><td>Minimum stay (lock-in)</td><td>5 years</td><td>7 years</td></tr>
+      <tr><td>Rent-free start</td><td>3–6 months while he builds</td><td>2–3 months while he fits out</td></tr>
+      <tr><td>Upper level</td><td>His to build if he wants</td><td>He builds it, or we build and charge ₹7–8 per sq ft extra</td></tr>
+    </tbody>
+  </table></div>
+  <div class="callout"><b>In the agreement, write a fixed monthly amount,</b> such as “₹1,00,595 a month for the premises as per the approved plan”, not a rate per sq ft. That avoids later arguments over how the area is measured.</div>
+</section>
+
+<section id="loan">
+  <h2>Clearing the loan early (Option C)</h2>
+  <p>The plan: take a normal 10-year loan, but pay the bank the whole rent every month, after upkeep and tax. The required monthly payment stays low as a safety net, and everything extra goes straight to clearing the loan.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>At ₹15.5 per sq ft (₹1,00,595 a month), 80% loan at 10%</th><th class="n">Building ₹50 lakh</th><th class="n">Building ₹55 lakh</th></tr></thead>
+    <tbody>
+      <tr><td>Loan amount</td><td class="n">₹40 lakh</td><td class="n">₹44 lakh</td></tr>
+      <tr><td>Families put in</td><td class="n">₹10 lakh</td><td class="n">₹11 lakh</td></tr>
+      <tr><td>Required monthly payment (safety net)</td><td class="n">₹52,860</td><td class="n">₹58,146</td></tr>
+      <tr class="total"><td>Loan cleared in</td><td class="n">~4.8 years</td><td class="n">~5.3 years</td></tr>
+      <tr><td>Interest paid</td><td class="n">~₹10.4 lakh</td><td class="n">~₹12.6 lakh</td></tr>
+      <tr><td>Interest on the normal 10-year schedule</td><td class="n">~₹23.4 lakh</td><td class="n">~₹25.8 lakh</td></tr>
+      <tr class="total"><td>Interest saved</td><td class="n">~₹13.0 lakh</td><td class="n">~₹13.2 lakh</td></tr>
+      <tr><td>Families’ money each month once the loan is cleared (after upkeep and tax)</td><td class="n">~₹92,000 from year 6, rising</td><td class="n">~₹96,000 from year 7, rising</td></tr>
+      <tr><td>15-year total for the families</td><td class="n">~₹1.26 crore</td><td class="n">~₹1.20 crore</td></tr>
+      <tr><td>Same, with the normal 10-year schedule</td><td class="n">~₹1.17 crore</td><td class="n">~₹1.11 crore</td></tr>
+    </tbody>
+  </table></div>
+  <ul>
+    <li><strong>Why not a 5-year loan?</strong> It would lock us into ₹85–93k a month. With a 10-year loan we must pay only ₹53–58k, so if the tenant leaves or pays late we aren’t stuck with the bigger payment.</li>
+    <li><strong>Prepayment charges:</strong> RBI rules now stop banks charging them on many floating-rate loans to individuals and small businesses. Confirm it in writing for a loan in the firm’s name.</li>
+    <li><strong>Keep the deposit separate.</strong> Don’t use it to pay the loan; it’s our cushion if the hall goes empty.</li>
+    <li><strong>The cost:</strong> for about 5 years the families receive almost nothing from the plots. Option A would pay about ₹28k a month after tax from day one, but nothing like Option C’s ₹92k+ afterwards.</li>
+  </ul>
+</section>
+
+<section id="calculator">
+  <h2>Calculator</h2>
+  <p>Enter the two rents. The calculator tells you which option leaves the families better off, and explains why. The other settings are already filled in with our estimates; change them only if you have better numbers.</p>
+  <div class="calc">
+    <div class="inputs" id="inputs">
+      <div class="big">
+        <div class="a"><label for="rentA">Option A rent, land only<small>₹ per month</small></label><input id="rentA" type="number" inputmode="numeric" value="35000" step="1000" min="0"></div>
+        <div class="c"><label for="rentC">Option C rent, land plus building<small>₹ per month</small></label><input id="rentC" type="number" inputmode="numeric" value="100595" step="1000" min="0"></div>
+      </div>
+      <div class="field"><label for="horizon">How long we keep it</label><select id="horizon"><option value="10">10 years</option><option value="15" selected>15 years</option><option value="20">20 years</option></select></div>
+      <div class="field"><label for="payoff">Use the full rent to clear the loan early</label><select id="payoff"><option value="yes" selected>Yes</option><option value="no">No, normal EMI</option></select></div>
+      <details><summary>More settings</summary>
+        <div class="fs">The building (Option C)</div>
+        <div class="field"><label for="shell">Cost of the building (₹)</label><input id="shell" type="number" value="5500000" step="100000" min="0"></div>
+        <div class="field"><label for="loanPct">Part paid by loan (%)</label><input id="loanPct" type="number" value="80" step="5" min="0" max="100"></div>
+        <div class="field"><label for="rate">Loan interest (% a year)</label><input id="rate" type="number" value="10" step="0.25" min="0"></div>
+        <div class="field"><label for="tenor">Loan length</label><select id="tenor"><option value="10" selected>10 years</option><option value="15">15 years</option></select></div>
+        <div class="field"><label for="maint">Our upkeep cost (₹ a year)</label><input id="maint" type="number" value="60000" step="10000" min="0"></div>
+        <div class="field"><label for="resid">Building’s value at the end (% of cost)</label><input id="resid" type="number" value="40" step="5" min="0" max="100"></div>
+        <div class="field"><label for="dep">Deposit (months of rent)</label><input id="dep" type="number" value="8" step="1" min="0"></div>
+        <div class="fs">Tax</div>
+        <div class="field"><label for="taxA">Families’ tax rate, Option A (%)</label><input id="taxA" type="number" value="20" step="1" min="0" max="45"></div>
+        <div class="field"><label for="treat">How the firm’s rent is taxed</label><select id="treat"><option value="biz" selected>As business income</option><option value="hp">As house property</option></select></div>
+        <div class="fs">Both options</div>
+        <div class="field"><label for="esc">Yearly rent increase (%)</label><input id="esc" type="number" value="5" step="0.5" min="0"></div>
+        <div class="fs">The tenant’s side</div>
+        <div class="field"><label for="opRev">Hall’s income (₹ a month)</label><input id="opRev" type="number" value="300000" step="10000" min="0"></div>
+        <div class="field"><label for="opRate">His loan interest (% a year)</label><input id="opRate" type="number" value="11" step="0.25" min="0"></div>
+      </details>
+    </div>
+    <div class="outs">
+      <div class="answer" id="answer" aria-live="polite"><h3 id="ansTitle">–</h3><div id="ansBody"></div></div>
+      <div class="gauge" aria-hidden="true">
+        <div class="bar" id="gBar"><div class="za" id="gA"></div><div class="zc" id="gC"></div><div class="zw" id="gW"></div><span class="mk" id="gMk"></span></div>
+        <div class="ticks" id="gTicks"></div>
+        <div class="keys"><span><i style="background:var(--a-soft)"></i>Extra too small: Option A</span><span><i style="background:var(--c-soft)"></i>Good for both: Option C</span><span><i style="background:var(--warn-soft)"></i>More than building it himself would cost</span><span><i style="background:var(--ink)"></i>Your building premium</span></div>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><span>Building premium you entered</span><b id="kPrem">–</b></div>
+        <div class="kpi"><span>Premium Option C needs</span><b id="kNeed">–</b></div>
+        <div class="kpi"><span>Most the tenant should pay extra</span><b id="kMax">–</b></div>
+        <div class="kpi a"><span>Option A: our money each month, year 1</span><b id="kA1">–</b></div>
+        <div class="kpi c"><span>Option C: our money each month, year 1</span><b id="kC1">–</b></div>
+        <div class="kpi c"><span>Option C: our money each month after loan</span><b id="kC2">–</b></div>
+        <div class="kpi a"><span>Option A: total by the end</span><b id="kAT">–</b></div>
+        <div class="kpi c"><span>Option C: total by the end</span><b id="kCT">–</b></div>
+        <div class="kpi c"><span>Option C total, plus building value</span><b id="kCR">–</b></div>
+        <div class="kpi c"><span>Loan cleared in</span><b id="kPay">–</b></div>
+        <div class="kpi c"><span>Interest saved by paying early</span><b id="kSave">–</b></div>
+      </div>
+      <ul class="checks" id="checks"></ul>
+      <div class="chart"><svg id="chart" viewBox="0 0 640 300" role="img" aria-label="Total money received over time, Option A versus Option C"></svg></div>
+      <div class="legend"><span><i style="background:var(--a);border-color:var(--a)"></i>Option A: total money so far</span><span><i style="background:var(--c);border-color:var(--c)"></i>Option C: total money so far (starts below zero because of our ₹ investment)</span></div>
+      <details><summary>Year-by-year numbers</summary>
+        <div class="tbl"><table>
+          <thead><tr><th>Year</th><th class="n">A per month</th><th class="n">C per month</th><th class="n">C loan interest</th><th class="n">C tax</th><th class="n">A total so far</th><th class="n">C total so far</th></tr></thead>
+          <tbody id="rows"></tbody>
+        </table></div>
+      </details>
+      <p class="note">“Our money” is what the three families keep after loan payments, upkeep and tax, shared by land area. Option C’s total starts negative because we put in our share of the building cost on day one.</p>
+    </div>
+  </div>
+</section>
+
+<section id="tax">
+  <h2>Tax, simply</h2>
+  <div class="callout"><b>A common mistake:</b> only the interest part of each loan payment reduces tax. The part that pays back the loan itself does not. Instead, the firm can reduce its taxable income by a share of the building’s cost each year (called <strong>depreciation</strong>, about 10% a year).</div>
+  <ul>
+    <li><strong>Option A:</strong> each family pays tax on its share of the rent at its own tax rate. No firm needed.</li>
+    <li><strong>Option C:</strong> the three families form a firm (an LLP is safest). The firm owns the building, pays the loan and collects rent. It pays tax at about 31%, but only on what’s left after interest, depreciation and upkeep. In year one that’s about ₹50,000 of tax on ₹12 lakh of rent.</li>
+    <li><strong>The firm’s profit reaches the families tax-free.</strong> The firm can also pay the families up to 12% interest on the money they put in, which can lower total tax.</li>
+    <li><strong>One open question for the accountant:</strong> the tax department may treat the firm’s rent as “house property” income instead of business income. Then depreciation isn’t allowed and the year-one tax rises to about ₹1.3 lakh. The calculator has a setting for this.</li>
+    <li><strong>GST:</strong> not needed while yearly rent stays under ₹20 lakh. Both options stay under it for now.</li>
+    <li><strong>TDS:</strong> the tenant must cut 10% tax from rent above ₹50,000 a month and deposit it in our name. We get credit for it when we file returns.</li>
+    <li><strong>Don’t hand the land over to the firm.</strong> Lease it to the firm instead. Giving it as capital can trigger stamp duty and capital gains tax, and makes it hard to take back later.</li>
+  </ul>
+</section>
+
+<section id="legal">
+  <h2>Legal and approvals</h2>
+  <h3>Check before agreeing anything</h3>
+  <ul>
+    <li><strong>Is a sports hall allowed here?</strong> The layout is approved for houses. We must confirm with the local planning authority whether an indoor sports hall is permitted, or needs a change of land use.</li>
+    <li><strong>Is the road wide enough?</strong> Non-residential buildings need a minimum road width, often 12 m. Our 40 ft road is about 12.2 m, just enough. Also check whether either road is planned to be widened, because that would eat into our land.</li>
+    <li><strong>Clean papers:</strong> clear ownership, encumbrance certificates, updated name transfer and paid property tax for all three plots.</li>
+  </ul>
+  <h3>Permissions to build</h3>
+  <ul>
+    <li><strong>Treat the three plots as one site.</strong> Otherwise the open-strip rule applies between our own plots too and the hall won’t fit. The LTP will advise whether to formally combine the plots or apply jointly.</li>
+    <li><strong>Fire department approval is needed.</strong> AP rules require it for halls on land over 500 m², or taller than 6 m. Ours is both.</li>
+    <li>A steel hall still needs regular building permission and a structural safety certificate.</li>
+  </ul>
+  <h3>What the rental agreement must say</h3>
+  <ul>
+    <li>Registered, since any lease over 11 months must be.</li>
+    <li>A fixed monthly rent for “the premises as per the approved plan”, not a rate per sq ft, so there’s no argument later about how the area is measured.</li>
+    <li>Rent, yearly increase, deposit, and minimum period (lock-in) the tenant cannot leave before.</li>
+    <li>Who owns the building at the end, and what happens if the tenant leaves early.</li>
+    <li>The tenant can’t sublet without permission and can use the place only for sports.</li>
+    <li>Insurance for the building and for injuries to players.</li>
+    <li>Opening hours and noise limits, since neighbours will complain about early-morning and late-night play.</li>
+    <li>What counts as default, how long he gets to fix it, and how disputes are settled.</li>
+    <li>A personal guarantee from the tenant.</li>
+  </ul>
+  <h3>Among the three families</h3>
+  <p>Put in writing: how rent is shared, who pays what towards the building and loan (Option C), how decisions are made, and what happens if one family wants to sell or step out. In Option C, the firm’s agreement covers this.</p>
+</section>
+
+<section id="next">
+  <h2>Next steps</h2>
+  <ol class="steps">
+    <li><strong>Meet an LTP</strong> to confirm the open-strip widths, whether a sports hall is allowed, and how to treat the three plots as one site.</li>
+    <li><strong>Ask two or three local brokers</strong> what empty plots on 40–50 ft roads rent for.</li>
+    <li><strong>Ask the tenant for two prices:</strong> empty land, and ready building. Also ask his lease length, his past experience and proof of funds.</li>
+    <li><strong>Enter both prices in the calculator</strong> and agree among the three families on Option A or C.</li>
+    <li><strong>For Option C:</strong> ask two or three banks whether they’ll lend against the plots, and get fixed-price quotes from two or three steel building contractors.</li>
+    <li><strong>Accountant review</strong> of the tax treatment and the firm.</li>
+    <li><strong>Lawyer drafts</strong> the families’ agreement and the lease. Register the lease.</li>
+    <li><strong>Get building and fire approvals</strong> before any construction starts.</li>
+  </ol>
+</section>
+
+<section id="words">
+  <h2>Words used here</h2>
+  <dl class="gloss">
+    <dt>Setback</dt><dd>Land that must be left open along each edge of the plot. Nothing can be built on it.</dd>
+    <dt>LTP</dt><dd>Licensed technical person: an architect or engineer allowed to submit building plans to the authority.</dd>
+    <dt>Shell</dt><dd>The basic building without the sports fittings: foundation, frame, roof, walls, toilets, power and water.</dd>
+    <dt>Fit-out</dt><dd>Everything the tenant adds to make it a working hall: court flooring, lights, nets, furniture.</dd>
+    <dt>Building premium</dt><dd>How much more rent the tenant pays for land plus building than for land alone.</dd>
+    <dt>EMI</dt><dd>The fixed monthly loan payment. Part is interest, part pays back the loan.</dd>
+    <dt>Lock-in</dt><dd>The minimum period the tenant agrees to stay. If he leaves earlier, he still owes rent for that period.</dd>
+    <dt>Deposit</dt><dd>Money the tenant gives upfront, returned at the end. It covers us if he leaves suddenly or causes damage.</dd>
+    <dt>Escalation</dt><dd>The agreed yearly rent increase, here 5%.</dd>
+    <dt>Depreciation</dt><dd>A yearly allowance for the building wearing out. It reduces taxable income without any money leaving the bank.</dd>
+    <dt>LLP</dt><dd>Limited liability partnership: a firm where each partner’s risk is limited to what they put in.</dd>
+    <dt>Mezzanine</dt><dd>A partial upper floor inside a tall hall.</dd>
+  </dl>
+</section>
+
+<section id="assumptions">
+  <h2>Assumptions</h2>
+  <ul>
+    <li>Land at ₹15–16 lakh per cent. One cent is 435.6 sq ft.</li>
+    <li>Bank loans against property at about 9.5–11% a year (HDFC Bank and SBI, November 2026), with a processing fee of up to 1%.</li>
+    <li>Badminton courts in similar Andhra towns rent at ₹250–350 an hour. Three courts plus coaching might earn the tenant ₹2.5–3.5 lakh a month.</li>
+    <li>Steel badminton halls cost roughly ₹170–700 per sq ft depending on height and finish. The ₹50–55 lakh ground-floor building fits within that range.</li>
+    <li>Option A rent is taxed at an assumed 20% average rate for the families. The firm pays about 31.2%.</li>
+    <li>Open-strip widths are assumptions until an LTP confirms them.</li>
+  </ul>
+  <p class="note">This page is for planning and discussion. It isn’t legal, tax or financial advice.</p>
+</section>
+</main>
+</div>
+
+<script>
+(function(){
+  var NS="http://www.w3.org/2000/svg";
+  function el(tag,attrs,parent){var e=document.createElementNS(NS,tag);for(var k in attrs)e.setAttribute(k,attrs[k]);if(parent)parent.appendChild(e);return e;}
+  // courts on plan
+  var g=document.getElementById("courts");
+  if(g){
+    var X=209.2,W=220,H=100,ys=[225.3,360.3,495.3],u=5;
+    ys.forEach(function(y){
+      el("rect",{x:X,y:y,width:W,height:H,"class":"p-court"},g);
+      var mid=X+W/2;
+      el("line",{x1:mid,y1:y,x2:mid,y2:y+H,"class":"p-cline",style:"stroke-width:2"},g);
+      el("line",{x1:mid-6.5*u,y1:y,x2:mid-6.5*u,y2:y+H,"class":"p-cline"},g);
+      el("line",{x1:mid+6.5*u,y1:y,x2:mid+6.5*u,y2:y+H,"class":"p-cline"},g);
+      el("line",{x1:X+2.5*u,y1:y,x2:X+2.5*u,y2:y+H,"class":"p-cline"},g);
+      el("line",{x1:X+W-2.5*u,y1:y,x2:X+W-2.5*u,y2:y+H,"class":"p-cline"},g);
+      el("line",{x1:X,y1:y+1.5*u,x2:X+W,y2:y+1.5*u,"class":"p-cline"},g);
+      el("line",{x1:X,y1:y+H-1.5*u,x2:X+W,y2:y+H-1.5*u,"class":"p-cline"},g);
+      el("line",{x1:X,y1:y+H/2,x2:mid-6.5*u,y2:y+H/2,"class":"p-cline"},g);
+      el("line",{x1:mid+6.5*u,y1:y+H/2,x2:X+W,y2:y+H/2,"class":"p-cline"},g);
+      el("line",{x1:mid-7*u,y1:y,x2:mid-7*u,y2:y+H,"class":"p-pk"},g);
+      el("line",{x1:mid+7*u,y1:y,x2:mid+7*u,y2:y+H,"class":"p-pk"},g);
+    });
+  }
+  var b=document.getElementById("bikes");
+  if(b){for(var i=0;i<12;i++){el("rect",{x:478,y:300+i*20,width:26,height:12,rx:2,"class":"p-bike"},b);}}
+
+  // nav
+  var links=[].slice.call(document.querySelectorAll("#toc a")), mob=document.getElementById("mobnav");
+  links.forEach(function(a){var m=document.createElement("a");m.href=a.getAttribute("href");m.textContent=a.textContent;mob.appendChild(m);});
+  var all=[].slice.call(document.querySelectorAll("#toc a, #mobnav a"));
+  function mark(id){all.forEach(function(a){a.classList.toggle("on",a.getAttribute("href")==="#"+id);});}
+  if("IntersectionObserver" in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)mark(e.target.id);});},{rootMargin:"-30% 0px -60% 0px"});
+    links.forEach(function(a){var s=document.querySelector(a.getAttribute("href"));if(s)io.observe(s);});
+  }
+  function goHash(){var h=location.hash.replace("#","");var t=h&&document.getElementById(h);if(t){t.scrollIntoView();mark(h);}}
+  window.addEventListener("hashchange",goHash); if(location.hash)setTimeout(goHash,50);
+
+  // theme
+  var root=document.documentElement;
+  try{var saved=localStorage.getItem("court-plan-theme");if(saved)root.setAttribute("data-theme",saved);}catch(e){}
+  document.getElementById("themeBtn").addEventListener("click",function(){
+    var cur=root.getAttribute("data-theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");
+    var nx=cur==="dark"?"light":"dark"; root.setAttribute("data-theme",nx);
+    try{localStorage.setItem("court-plan-theme",nx);}catch(e){}
+  });
+
+  // ---- model ----
+  function v(id){var x=parseFloat(document.getElementById(id).value);return isFinite(x)?x:0;}
+  function emi(P,annual,yrs){if(P<=0)return 0;var r=annual/12,n=yrs*12;if(r===0)return P/n;var f=Math.pow(1+r,n);return P*r*f/(f-1);}
+  function run(p){
+    var loan=p.shell*p.loanPct, E=emi(loan,p.rate,p.tenor), bal=loan, wdv=p.shell;
+    var cumA=0, cumC=-(p.shell-loan), rows=[], totInt=0, payYear=null;
+    var prevTax=Math.max(0,p.rentC*12-loan*p.rate-p.shell*0.1-p.maint)*0.312;
+    for(var y=1;y<=p.H;y++){
+      var gg=Math.pow(1+p.esc,y-1), ra=p.rentA*12*gg, rc=p.rentC*12*gg, m=p.maint*gg;
+      var target=p.payoff?Math.max(E,(rc-m-prevTax)/12):E, bal0=bal, intr=0, pay=0, py=null, d=0, tax=0, cC=0;
+      for(var pass=0;pass<3;pass++){
+        bal=bal0; intr=0; pay=0; py=null;
+        for(var k=0;k<12;k++){ if(bal>0.5){ var it=bal*p.rate/12, pr=Math.max(0,Math.min(target-it,bal)); bal-=pr; intr+=it; pay+=it+pr; if(bal<=0.5&&py===null)py=y-1+(k+1)/12; } }
+        d=wdv*0.10;
+        var ti=p.treat==="biz"?Math.max(0,rc-intr-d-m):Math.max(0,rc*0.7-intr);
+        tax=ti*0.312; cC=rc-pay-m-tax;
+        if(!p.payoff||cC>=-1||target<=E)break;
+        target=Math.max(E,target+cC/12);
+      }
+      wdv-=d; totInt+=intr; if(py!==null&&payYear===null)payYear=py; prevTax=tax;
+      var cA=ra*(1-p.taxA);
+      cumA+=cA; cumC+=cC;
+      rows.push({y:y,a:cA/12,c:cC/12,intr:intr,tax:tax,cumA:cumA,cumC:cumC,paid:bal<=0.5});
+    }
+    return {E:E,equity:p.shell-loan,rows:rows,resid:p.shell*p.resid,totInt:totInt,payYear:payYear};
+  }
+  function params(){
+    return {rentA:v("rentA"),rentC:v("rentC"),taxA:v("taxA")/100,shell:v("shell"),loanPct:Math.min(1,v("loanPct")/100),
+      rate:v("rate")/100,tenor:parseInt(document.getElementById("tenor").value,10),maint:v("maint"),
+      treat:document.getElementById("treat").value,resid:v("resid")/100,esc:v("esc")/100,
+      payoff:document.getElementById("payoff").value==="yes",H:parseInt(document.getElementById("horizon").value,10),dep:v("dep"),opRev:v("opRev"),opRate:v("opRate")/100};
+  }
+  function breakEvenRent(p,withRes){
+    var lo=0,hi=Math.max(600000,p.rentA*20);
+    for(var i=0;i<50;i++){var mid=(lo+hi)/2,q=Object.assign({},p,{rentC:mid}),r=run(q),l=r.rows[r.rows.length-1];
+      if(l.cumC+(withRes?r.resid:0)>=l.cumA)hi=mid;else lo=mid;}
+    return hi;
+  }
+  function rs(x){var s=Math.round(Math.abs(x)).toLocaleString("en-IN");return (x<0?"−₹":"₹")+s;}
+  function r1k(x){return Math.round(x/1000)*1000;}
+  function lk(x){var a=Math.abs(x),s=a>=1e7?(a/1e7).toFixed(2)+" crore":(a/1e5).toFixed(1)+" lakh";return (x<0?"−₹":"₹")+s;}
+  function set(id,t){document.getElementById(id).textContent=t;}
+  function esc(s){return s;}
+
+  function render(){
+    var p=params(), r=run(p), last=r.rows[r.rows.length-1];
+    var prem=p.rentC-p.rentA;
+    var need=breakEvenRent(p,false)-p.rentA, needRes=breakEvenRent(p,true)-p.rentA;
+    var opMax=emi(p.shell,p.opRate,10);
+    var diff=last.cumC-last.cumA, diffRes=diff+r.resid;
+    var burden=p.opRev>0?p.rentC/p.opRev:0;
+    var deposit=p.dep*p.rentC, cover=r.E>0?deposit/r.E:Infinity;
+    var after=null; for(var i=0;i<r.rows.length;i++){ if(r.rows[i].paid){ after=r.rows[i+1]||null; break; } }
+    var over=null; for(var j=0;j<r.rows.length;j++){ if(r.rows[j].cumC>=r.rows[j].cumA){over=r.rows[j].y;break;} }
+
+    // verdict
+    var cls,title,body=[];
+    var H=p.H;
+    if(prem>=need){
+      if(prem>opMax){cls="w";title="Option C pays more, but the tenant may say no";}
+      else if(burden>0.35){cls="w";title="Option C pays more, but the rent is heavy for the hall";}
+      else {cls="c";title="Go with Option C";}
+      body.push("You’re asking "+rs(prem)+" a month more for the building. Option C needs at least "+rs(r1k(need))+" more to beat Option A over "+H+" years, so this clears the bar by "+rs(r1k(prem-need))+".");
+      body.push("Over "+H+" years the families would receive about "+lk(diff)+" more than in Option A, and still own the building (worth roughly "+lk(r.resid)+").");
+    } else if(prem>=needRes){
+      cls="w";title="Close call. Lean towards Option A";
+      body.push("You’re asking "+rs(prem)+" a month more for the building. That’s short of the "+rs(r1k(need))+" Option C needs on cash alone.");
+      body.push("Option C only comes out ahead if you count the building’s value at the end ("+lk(r.resid)+"). Unless you plan to keep the building long-term, the extra risk isn’t worth it.");
+    } else {
+      cls="a";title="Go with Option A";
+      body.push(prem<=0?"Option C’s rent isn’t higher than Option A’s, so building makes no sense.":"You’re asking "+rs(prem)+" a month more for the building. Option C needs at least "+rs(r1k(need))+" more to be worth the investment and the loan.");
+      body.push("Over "+H+" years the families would get about "+lk(-diff)+" more in Option A, with no loan and no risk.");
+    }
+    if(prem>opMax) body.push("The tenant would pay more extra rent than it would cost him to build himself (about "+rs(r1k(opMax))+" a month). He may refuse, or he may be short of money. Check his finances.");
+    if(burden>0.35) body.push("Rent of "+rs(p.rentC)+" would take "+Math.round(burden*100)+"% of the hall’s estimated income. Above about 35%, tenants often struggle to pay.");
+    if(need>opMax) body.push("With these settings no building rent works for both sides: what we need is more than what building it himself would cost the tenant.");
+    var full=Math.max(p.H,p.tenor), rP=run(Object.assign({},p,{payoff:true,H:full})), rN=run(Object.assign({},p,{payoff:false,H:full}));
+    if(p.payoff&&rP.payYear) body.push("Using the full rent, the loan is cleared in about "+rP.payYear.toFixed(1)+" years, saving about "+lk(rN.totInt-rP.totInt)+" in interest. Until then almost all the rent goes to the bank, so the families receive very little from the plots.");
+    var ans=document.getElementById("answer"); ans.className="answer "+cls;
+    set("ansTitle",title);
+    document.getElementById("ansBody").innerHTML=body.map(function(t){return "<p>"+t+"</p>";}).join("");
+
+    // gauge
+    var lo=Math.max(0,need), hi=Math.max(lo,opMax);
+    var end=Math.max(hi*1.35,prem*1.12,lo*1.5,10000);
+    function pct(x){return Math.max(0,Math.min(100,x/end*100));}
+    document.getElementById("gA").style.width=pct(lo)+"%";
+    document.getElementById("gC").style.width=(pct(hi)-pct(lo))+"%";
+    document.getElementById("gW").style.width=(100-pct(hi))+"%";
+    document.getElementById("gMk").style.left=pct(Math.max(0,prem))+"%";
+    var ticks=document.getElementById("gTicks"); ticks.innerHTML="";
+    [[0,"₹0"],[lo,rs(r1k(lo))],[hi,rs(r1k(hi))]].forEach(function(t,ix){
+      if(ix===2&&Math.abs(pct(hi)-pct(lo))<12)return;
+      var s=document.createElement("span");s.style.left=Math.min(94,Math.max(4,pct(t[0])))+"%";s.textContent=t[1];ticks.appendChild(s);});
+
+    // kpis
+    set("kPrem",rs(prem)); set("kNeed",rs(r1k(need))); set("kMax",rs(r1k(opMax)));
+    set("kA1",rs(r.rows[0].a)); set("kC1",rs(r.rows[0].c));
+    set("kC2",after?rs(after.c)+" (yr "+after.y+")":"Loan still running");
+    set("kAT",lk(last.cumA)); set("kCT",lk(last.cumC)); set("kCR",lk(last.cumC+r.resid));
+    set("kPay",p.payoff&&rP.payYear?("About "+rP.payYear.toFixed(1)+" years"):("Year "+p.tenor+" (normal EMI)"));
+    set("kSave",p.payoff?lk(rN.totInt-rP.totInt):"₹0 (normal EMI)");
+
+    // checks
+    var ck=[];
+    ck.push((r.rows[0].c>=r.rows[0].a?"<span class='ok'>✓</span> ":"<span class='bad'>!</span> ")+"In year 1, Option C gives "+rs(r.rows[0].c)+" a month against Option A’s "+rs(r.rows[0].a)+".");
+    ck.push(over?"<span class='ok'>✓</span> Option C’s total overtakes Option A’s in year "+over+".":"<span class='bad'>!</span> Option C’s total doesn’t overtake Option A’s within "+H+" years (without counting the building’s value).");
+    ck.push((cover>=6?"<span class='ok'>✓</span> ":"<span class='bad'>!</span> ")+"A deposit of "+p.dep+" months’ rent ("+rs(deposit)+") would cover about "+(isFinite(cover)?cover.toFixed(1):"all")+" months of loan payments if the tenant left.");
+    ck.push((burden<=0.30?"<span class='ok'>✓</span> ":"<span class='bad'>!</span> ")+"Option C rent is "+Math.round(burden*100)+"% of the hall’s estimated income: "+(burden<=0.30?"comfortable":burden<=0.35?"on the edge":"too high")+". Under 30% is comfortable; above 35% is risky.");
+    var opA=p.rentA+opMax;
+    ck.push("For the tenant: Option A costs him "+rs(p.rentA)+" rent plus about "+rs(r1k(opMax))+" for his own building loan, about "+rs(r1k(opA))+" a month. Option C costs him "+rs(p.rentC)+". "+(p.rentC<=opA?"Option C is cheaper for him.":"Option A is cheaper for him."));
+    document.getElementById("checks").innerHTML=ck.map(function(t){return "<li>"+t+"</li>";}).join("");
+
+    // table
+    var html="";
+    r.rows.forEach(function(x){html+="<tr><td>"+x.y+"</td><td class='n a'>"+rs(x.a)+"</td><td class='n c'>"+rs(x.c)+"</td><td class='n'>"+lk(x.intr)+"</td><td class='n'>"+lk(x.tax)+"</td><td class='n'>"+lk(x.cumA)+"</td><td class='n'>"+lk(x.cumC)+"</td></tr>";});
+    document.getElementById("rows").innerHTML=html;
+    drawChart(r.rows,r.equity);
+  }
+  function drawChart(rows,equity){
+    var svg=document.getElementById("chart"); while(svg.firstChild)svg.removeChild(svg.firstChild);
+    var W=640,H=300,L=74,R=16,T=16,B=34;
+    var vals=[0,-equity];rows.forEach(function(x){vals.push(x.cumA,x.cumC);});
+    var mn=Math.min.apply(null,vals),mx=Math.max.apply(null,vals);
+    var step=Math.pow(10,Math.floor(Math.log10(Math.max(1,(mx-mn)/4))));
+    [1,2,2.5,5,10].some(function(m){if((mx-mn)/(step*m)<=5){step*=m;return true;}return false;});
+    mn=Math.floor(mn/step)*step; mx=Math.ceil(mx/step)*step; if(mx===mn)mx=mn+step;
+    var n=rows.length;
+    function xs(i){return L+(W-L-R)*(i/n);}
+    function ys(val){return T+(H-T-B)*(1-(val-mn)/(mx-mn));}
+    for(var t=mn;t<=mx+1;t+=step){
+      el("line",{x1:L,y1:ys(t),x2:W-R,y2:ys(t),"class":Math.abs(t)<1?"ch-zero":"ch-grid"},svg);
+      var tx=el("text",{x:L-8,y:ys(t)+4,"text-anchor":"end"},svg); tx.textContent=lk(t).replace(" lakh"," L").replace(" crore"," cr");
+    }
+    rows.forEach(function(x,i){ if(n<=10||x.y%5===0||x.y===1){var tx=el("text",{x:xs(i+1),y:H-12,"text-anchor":"middle"},svg);tx.textContent="Year "+x.y;} });
+    var dA="M"+xs(0)+" "+ys(0), dC="M"+xs(0)+" "+ys(-equity);
+    rows.forEach(function(x,i){dA+=" L"+xs(i+1)+" "+ys(x.cumA); dC+=" L"+xs(i+1)+" "+ys(x.cumC);});
+    el("path",{d:dA,"class":"ch-a"},svg); el("path",{d:dC,"class":"ch-c"},svg);
+  }
+  [].slice.call(document.querySelectorAll("#inputs input, #inputs select")).forEach(function(x){x.addEventListener("input",render);x.addEventListener("change",render);});
+  render();
+})();
+</script>
+</body>
+</html>
